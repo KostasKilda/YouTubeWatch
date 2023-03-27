@@ -6,4 +6,4 @@ print('Deploy watches')
 print('------------------------------------------\n\n')
 
 webbrowser.open('https://youtu.be/8Fske6WSqrs')
-time.sleep(600)
+time.sleep(10)
