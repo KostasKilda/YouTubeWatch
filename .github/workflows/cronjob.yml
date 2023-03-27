@@ -1,0 +1,26 @@
+name: YouTubeWatch
+
+on:
+  schedule:
+    - cron: '0 12 * * */1'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: main
+          token: ${{ secrets.ACESS_TOKEN }}
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: YouTubeWatch
+        run:
+          python watch.py
