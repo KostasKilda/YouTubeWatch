@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # open a new browser window and navigate to a webpage
-url = 'https://youtube.com'
+url = 'https://kostaskilda.github.io/YouTubeWatch/'
 webbrowser.open_new(url)
 
 # response = requests.get(url)
