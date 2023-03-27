@@ -1,4 +1,4 @@
-name: YouTubeWatch
+name: Deploy
 
 on:
   schedule:
