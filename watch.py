@@ -1,9 +1,16 @@
 import webbrowser
-import time
+import requests
+from bs4 import BeautifulSoup
 
-print('\n\n------------------------------------------')
-print('Deploy watches')
-print('------------------------------------------\n\n')
+# open a new browser window and navigate to a webpage
+url = 'https://youtube.com'
+webbrowser.open_new(url)
 
-webbrowser.open('https://youtu.be/8Fske6WSqrs')
-time.sleep(60)
+# response = requests.get(url)
+# html = response.content
+# soup = BeautifulSoup(html, 'html.parser')
+# button = soup.find('button', {'class': 'my-button-class'})
+# if button:
+#     button_url = button.get('href')
+#     button_data = {'button_param': 'value'}
+#     response = requests.post(button_url, data=button_data)
